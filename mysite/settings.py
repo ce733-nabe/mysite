@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c5v@mhq8ez8o@%9&cd-5b@&fi0=p%tvtp!^)(ci3_uyaq)vo%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = True
 
-#ALLOWED_HOSTS = []
-DEBUG = False
+ALLOWED_HOSTS = []
+#DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+#ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 # Application definition
 
@@ -132,4 +132,4 @@ import django_heroku
 
 #if 'DYNO' in os.environ:
 #    django_heroku.settings(locals())
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
